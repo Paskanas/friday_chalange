@@ -16,8 +16,8 @@ Design: https://www.figma.com/file/uaVXnAQh9QxVsUD1RcQEbt/Friday-Challenge?node-
 
 ## Project features
 
-- html
-- css
+- html svg, classes
+- css :hover, :first-child, transition
 
 ## Authors
 

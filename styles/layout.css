@@ -1,10 +1,15 @@
+:root {
+  --navFontSize: 0;
+  --navFontSizeHover: 16px;
+}
+
 nav {
   background-color: #F7F6FF;
   width:100px;
   height:100%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   /*My feature*/
-  /* transition: all ,.3s ease-in-out, .3s ease-in-out; */
+  transition: all ,.3s ease-in-out, .3s ease-in-out;
 }
 
  nav:hover {
@@ -48,9 +53,14 @@ nav {
   margin-left: 11px;
   width: calc(100% - 11px);
 }
-.navIconBG:first-child > .navText {
+
+
+.navIconBG:first-child  > .navText {
   color: var(--blueColor);
+  /*My feature*/
+  font-size: var(--navFontSize);
 }
+
 .navIconBG:first-child > .navIcon {
   margin-left: 32px;
 }
@@ -76,25 +86,29 @@ nav {
 }
 
 .navText {
-  display: none;
-  font-size: 16px;
+  /*Removed feature*/
+  /* display: none; */
+  font-size: 0px;
   line-height: 20px;
   float:left;
   margin: 19px 0px 20px;
   color: var(--greyColor);
-  text-decoration: none;
+  text-decoration: none;  
+  transition: all ,.3s ease-in-out, .3s ease-in-out;
 }
 
 nav:hover * > .navText{
-  display: block;
-  /* font-size: 16px; */
+  /*Removed feature*/
+  /* display: block; */
+  font-size: var(--navFontSizeHover);
+}
+
+/*My feature*/
+nav:hover * > .navIconBG:first-child  > .navText {
+  font-size: var(--navFontSizeHover);
 }
 
 /*My feature*/
 /* .navText:hover {
   border-bottom: 1px solid var(--greyColor);
-}
-
-.navIconBG:first-child > .navText:hover {
-  border-bottom: 1px solid var(--blueColor);
 } */
