@@ -1,0 +1,27 @@
+main{
+  width: 100%;
+  position: relative;
+}
+
+footer {
+  position:absolute;
+  bottom:0;
+  left: 50%;
+  transform: translate(-50% );
+  width:346px;
+
+}
+
+.footerLine {
+  width:346px;
+  border: 1px solid var(--blueColor);
+  margin-bottom: 11px;
+}
+
+.footerText {
+  text-align: center;
+  color: var(--blueColor);
+  font-size: 11px;
+  line-height: 13px;
+  height: 24px;
+}

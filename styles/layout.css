@@ -1,0 +1,100 @@
+nav {
+  background-color: #F7F6FF;
+  width:100px;
+  height:100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /*My feature*/
+  /* transition: all ,.3s ease-in-out, .3s ease-in-out; */
+}
+
+ nav:hover {
+ width:206px;
+} 
+
+.logoImg{
+  box-sizing: initial;
+  padding-bottom: 24px;
+  width:100%;
+  height: 34px;
+  margin-top: 52px;
+  cursor: pointer;
+}
+
+.navLine {
+  width: 62.24%;
+  height: 0;
+  border-bottom: 2px solid var(--greyColor);
+  margin: 0px 18% 32px 
+}
+
+.navIconBG {
+  display: inline-block;
+  width: 100%;
+  height: 57px;
+  margin-bottom: 18px;
+  position: relative;
+  border-radius: 25px 0px 0px 25px;
+  
+  /*My feature*/
+  /* cursor:pointer; */
+}
+
+.navIconBG > svg > path {
+  fill: var(--greyColor)
+}
+
+.navIconBG:first-child {
+  background-color: var(--navIconBgColor);
+  margin-left: 11px;
+  width: calc(100% - 11px);
+}
+.navIconBG:first-child > .navText {
+  color: var(--blueColor);
+}
+.navIconBG:first-child > .navIcon {
+  margin-left: 32px;
+}
+
+.navIconBG:first-child > svg > path {
+  fill: var(--blueColor)
+}
+
+.navIcon {
+  width: 25px;
+  height: 25px;
+  float:left;
+  margin: 16px;
+  margin-left: 37px;
+}
+
+.navIconGames {
+  width: 40px;
+  height: 25px;
+  float:left;
+  margin: 16px;
+  margin-left: 30px;
+}
+
+.navText {
+  display: none;
+  font-size: 16px;
+  line-height: 20px;
+  float:left;
+  margin: 19px 0px 20px;
+  color: var(--greyColor);
+  text-decoration: none;
+}
+
+nav:hover * > .navText{
+  display: block;
+  /* font-size: 16px; */
+}
+
+/*My feature*/
+/* .navText:hover {
+  border-bottom: 1px solid var(--greyColor);
+}
+
+.navIconBG:first-child > .navText:hover {
+  border-bottom: 1px solid var(--blueColor);
+} */

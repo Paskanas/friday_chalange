@@ -1,0 +1,23 @@
+:root {
+  --backgroundColor: #EBEEF5;
+  --greyColor: #C4C4C4;
+  --navIconBgColor: #FFF;
+  --blueColor: #02577A;
+}
+
+body, body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--backgroundColor);
+  position: relative;
+}
