@@ -44,8 +44,10 @@ nav {
   /* cursor:pointer; */
 }
 
-.navIconBG > svg > path {
-  fill: var(--greyColor)
+.navIconBG:hover {
+  background-color: var(--navIconBgColor);
+  margin-left: 11px;
+  width: calc(100% - 11px);
 }
 
 .navIconBG:first-child {
@@ -60,13 +62,21 @@ nav {
   /*My feature*/
   font-size: var(--navFontSize);
 }
+.navIconBG:hover  > .navText {
+  color: var(--blueColor);
+  /*My feature*/
+  /* font-size: var(--navFontSize); */
+}
 
 .navIconBG:first-child > .navIcon {
   margin-left: 32px;
+  filter: invert(26%) sepia(46%) saturate(1853%) hue-rotate(166deg) brightness(89%) contrast(103%);
+  
 }
-
-.navIconBG:first-child > svg > path {
-  fill: var(--blueColor)
+.navIconBG:hover > .navIcon {
+  margin-left: 32px;
+  filter: invert(26%) sepia(46%) saturate(1853%) hue-rotate(166deg) brightness(89%) contrast(103%);
+  
 }
 
 .navIcon {
@@ -75,13 +85,11 @@ nav {
   float:left;
   margin: 16px;
   margin-left: 37px;
+  filter: invert(69%) sepia(0%) saturate(396%) hue-rotate(143deg) brightness(112%) contrast(100%);
 }
 
 .navIconGames {
   width: 40px;
-  height: 25px;
-  float:left;
-  margin: 16px;
   margin-left: 30px;
 }
 
@@ -94,7 +102,7 @@ nav {
   margin: 19px 0px 20px;
   color: var(--greyColor);
   text-decoration: none;  
-  transition: all ,.3s ease-in-out, .3s ease-in-out;
+  transition: color ,.3s ease-in-out, .3s ease-in-out;
 }
 
 nav:hover * > .navText{
