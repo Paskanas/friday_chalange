@@ -4,7 +4,7 @@
 ![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)
 ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
 
-# Yoga project
+# Friday challenge project
 
 _friday challenge website project_
 
