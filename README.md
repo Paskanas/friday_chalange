@@ -13,11 +13,13 @@ This project is for educational porpuses only. Pull request are welcome, but pri
 Site published at: https://Paskanas.github.io/friday_challenge/
 
 Design: https://www.figma.com/file/uaVXnAQh9QxVsUD1RcQEbt/Friday-Challenge?node-id=607%3A721
+https://www.figma.com/file/uaVXnAQh9QxVsUD1RcQEbt/Friday-Challenge?node-id=608%3A819
 
 ## Project features
 
 - html svg, classes
-- css :hover, :first-child, transition
+- css :hover, :first-child, transition , calc, variables
+- JS: get current date
 
 ## Authors
 

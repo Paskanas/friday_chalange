@@ -8,34 +8,36 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
     </style>
-    <link rel="stylesheet" href="./styles/layout.css" />
-    <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/navigation/navigation.css" />
+    <link rel="stylesheet" href="./styles/home/home.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
-  <body>
+  <body onload="startTime(); startDate()">
     <nav>
-      <img src="./assets/logo.svg" alt="BIT logo" class="logoImg" />
+      <img src="./assets/nav/logo.svg" alt="BIT logo" class="logoImg" />
       <div class="navLine"></div>
       <div>
         <div class="navIconBG">
-          <img src="./assets/Home.svg" alt="Home icon" class="navIcon" />
+          <img src="./assets/nav/Home.svg" alt="Home icon" class="navIcon" />
           <a href="#" class="navText">Home</a>
         </div>
         <div class="navIconBG">
           <img
-            src="./assets/Calendar.svg"
+            src="./assets/nav/Calendar.svg"
             alt="Calendar icon"
             class="navIcon"
           />
           <a href="#" class="navText">Calendar</a>
         </div>
         <div class="navIconBG">
-          <img src="./assets/FE.svg" alt="FE icon" class="navIcon" />
+          <img src="./assets/nav/FE.svg" alt="FE icon" class="navIcon" />
           <a href="#" class="navText">FE</a>
         </div>
         <div class="navIconBG">
           <img
-            src="./assets/Games.svg"
+            src="./assets/nav/Games.svg"
             alt="Games icon"
             class="navIcon navIconGames"
           />
@@ -43,10 +45,33 @@
         </div>
       </div>
     </nav>
-    <main></main>
+    <main>
+      <section class="container no-padding">
+        <div class="row no-margin big-margin" >
+          <div class="col-12 col-md-7 ml-md-0 col-lg-7 ml-lg-0 time-date reverse">
+            <div id="txt" class="time"></div>
+            <div id="date" class="date">Pirmadienis, Balandžio 15, 2022</div>
+          </div>
+          <h1 class="col-8 col-md-5 col-lg-5 greetings">Good morning, Kasparai</h1>
+        </section>
+        <section class="container background no-padding">
+        </section>
+        <section class="container small-top-padding">
+          <div class="row">
+            <div class="col-12 col-lg-10 ml-lg-1 no-margin ">
+              <p class="quote">
+                “First, solve the problem. Then, write the code.” – John
+                Johnson
+              </p>
+            </div>
+          </div>
+        </section>
+    </main>
     <footer>
       <div class="footerLine"></div>
       <p class="footerText">&copy Baltic Institute of Technology</p>
     </footer>
   </body>
+  <div id="txt" style="margin-left: 200px;"></div>
+  <script src="./js/home.js"></script>
 </html>
